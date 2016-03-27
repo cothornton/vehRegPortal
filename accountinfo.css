@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900,400);
+
+html, body {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+#ct {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+#top{
+
+	width: 100%;
+	height: 30%;
+    background-size: cover;
+    text-align: center;
+    display: table;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+#txt {  /*this is so the text automatically stays in the middle of the div regardless of what happens */
+
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+#bottom {
+
+	width: 100%;
+	height: 65%;
+
+}
+
+#bleft {
+
+	width: 45%;
+	height: 60%;
+	float: left;
+	overflow: auto;
+
+}
+
+.table-responsive {
+
+	overflow: auto;
+
+}
+
+#bright {
+
+	width: 45%;
+	float: right;
+
+}

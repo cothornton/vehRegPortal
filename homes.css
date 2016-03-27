@@ -1,0 +1,76 @@
+html, body{
+
+	height:100%;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+#makeres {
+
+	height: 50%;
+	width: 100%;
+	background-image: url("makeres.png");
+	background-size: cover;
+
+}
+
+#accountinfo{
+
+	height: 50%;
+	width: 50%;
+	background-image: url("accountinfo.png");
+	background-size: cover;
+	float: left;
+
+}
+
+#reshistory {
+
+	height: 50%;
+	width: 50%;
+	background-image: url("reshistory.png");
+	background-size: cover;
+	float: right;
+	
+
+}
+
+p {
+
+	color: black;
+}
+
+#container {
+
+	height: 530px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	background-size: cover;
+
+}
+
+#middle{
+
+	text-align: center;
+}
+
+ul {
+	
+	margin: 10px;
+	display: inline-block;
+	
+}
+
+li {
+	
+	list-style-type: none;
+	display: inline;
+	padding-left: 120px;
+	padding-right: 120px;
+	
+}
