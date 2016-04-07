@@ -1,0 +1,162 @@
+<!DOCTYPE>
+<html>
+   <header>
+      <link rel="stylesheet" type="text/css" href="Admin.css"/>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="C:\nodeprojects\seniorproject\node_modules\angular-date-picker.css">
+      <title>Make A Reservation</title>
+   </header>
+   <body>
+      <!--      <div class="container">-->
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">
+               <img alt="Brand" src="/Users/Christian/Desktop/a&t.png">
+               </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li><a href="">Login As Student/Faculty</a></li>
+                  <li class="active"><a href="Admin.html">Administrator</a></li>
+               </ul>
+               <div class=" navbar-right">
+                  <!--  <div class="form-group">-->
+                  <h4>Welcome, </h4>
+                  <h5> SQL_NAME_QUERY</h5>
+                  <!--  </div>-->
+               </div>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <div class="container-fluid" id="cont">
+         <div id ="page">
+            <ul class="nav nav-tabs">
+               <li class="active"><a data-toggle="tab" href="#home">Approve/Deny</a></li>
+               <li><a data-toggle="tab" href="#menu1">Add/Remove Vehicles</a></li>
+               <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            </ul>
+            <div class="tab-content">
+               <div id="home" class="tab-pane fade in active">
+                  <h3>HOME</h3>
+                  <p>Some content.</p>
+               </div>
+               <div id="menu1" class="tab-pane fade">
+                  <h3>Menu 1</h3>
+                  <p>Some content in menu 1.</p>
+               </div>
+               <div id="menu2" class="tab-pane fade">
+                  <h3>Menu 2</h3>
+                  <p>Some content in menu 2.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <ul class="nav navbar-nav">
+               <li><a href="#">FAQ</a></li>
+               <li><a href="#">Other Senior Projects</a></li>
+               <li><a href="#">Computer Science Dept.</a></li>
+               <li><a href="#">About the Makers</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+      <script src="C:\nodeprojects\seniorproject\node_modules\angular-date-picker.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   </body>
+</html>
+<!DOCTYPE>
+<html>
+   <header>
+      <link rel="stylesheet" type="text/css" href="Admin.css"/>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="C:\nodeprojects\seniorproject\node_modules\angular-date-picker.css">
+      <title>Make A Reservation</title>
+   </header>
+   <body ng-app="calApp">
+      <!--      <div class="container">-->
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">
+               <img alt="Brand" src="/Users/Christian/Desktop/a&t.png">
+               </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li><a href="">Login As Student/Faculty</a></li>
+                  <li class="active"><a href="Admin.html">Administrator</a></li>
+               </ul>
+               <div class=" navbar-right">
+                  <!--  <div class="form-group">-->
+                  <h4>Welcome, </h4>
+                  <h5> SQL_NAME_QUERY</h5>
+                  <!--  </div>-->
+               </div>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <div class="container-fluid" id="cont">
+         <div id ="page">
+            <ul class="nav nav-tabs">
+               <li class="active"><a data-toggle="tab" href="#home">Approve/Deny</a></li>
+               <li><a data-toggle="tab" href="#menu1">Add/Remove Vehicles</a></li>
+               <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            </ul>
+            <div class="tab-content">
+               <div id="home" class="tab-pane fade in active">
+                  <h3>HOME</h3>
+                  <p>Some content.</p>
+               </div>
+               <div id="menu1" class="tab-pane fade">
+                  <h3>Menu 1</h3>
+                  <p>Some content in menu 1.</p>
+               </div>
+               <div id="menu2" class="tab-pane fade">
+                  <h3>Menu 2</h3>
+                  <p>Some content in menu 2.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <ul class="nav navbar-nav">
+               <li><a href="#">FAQ</a></li>
+               <li><a href="#">Other Senior Projects</a></li>
+               <li><a href="#">Computer Science Dept.</a></li>
+               <li><a href="#">About the Makers</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+      <script src="C:\nodeprojects\seniorproject\node_modules\angular-date-picker.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   </body>
+</html>

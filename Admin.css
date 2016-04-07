@@ -1,0 +1,40 @@
+html, body{
+
+
+	width: 100%;
+	height: 100%;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+
+}
+
+* { 
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; 
+
+}
+
+#cont {
+
+	/*background-color:#9ACD32;*/
+	height: 100%;
+	margin: 0;
+	border: 0;
+	position: relative;
+}
+
+#bottom {
+
+	display: table;
+	text-align: center;
+	color: white;
+
+}
+
+#bottom p {
+
+	display: table-cell;
+	vertical-align: middle;
+
+}
