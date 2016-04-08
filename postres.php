@@ -28,4 +28,6 @@ $result = mysql_query($query);
 if(!$result) {
   die(mysql_error());
 }
+
+header('Location: success.html');
 ?>

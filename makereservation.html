@@ -18,7 +18,7 @@
       
 -->
    </head>
-   <body ng-app="calApp">
+   <body>
 
    </header>
    <body>
@@ -92,13 +92,18 @@
                </table>
             </div>
          </div>
+
          <div class="row">
          <div class="container">
-            <div class="col-md-2 col-md-offset-2">
+            <div class="col-md-6 col-md-offset-2">
+
+              <!-- 
+              The Reservation form
+               -->
             <form action="postres.php" method="post" class="form-horizontal" role="form">
 
-
-               <h2>Please Enter Information</h2>
+ 
+               <legend>Please Enter Information</legend>
                
 <!-- Datepicker Script
                   <script>
@@ -134,7 +139,7 @@
                </div>
                <div class="form-group">
                   <label class="control-label">Vehicle</label>
-                  <input name="vehicle" type="text" class="form-control" placeholder="Please enter or select return date" id="usr">
+                  <input name="vehicle" type="text" class="form-control" id="usr">
                </div>
                <div class="form-group">
                   <label class="control-label">Miles</label>
@@ -144,9 +149,10 @@
                   <label for="usr" class="control-label">Purpose</label>
                   <textarea name= "purpose" rows="5" class="form-control" > </textarea>
                </div>
-               
+             
               
-               <button type="submit" class="btn btn-default"><a href="makeRes2.html"></a>Book it!</button>
+               <button type="submit" class="btn btn-default">Book It!</a></button>
+            
             
             </form>
          </div>

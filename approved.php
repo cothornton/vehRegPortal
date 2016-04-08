@@ -2,7 +2,7 @@
 include("db.php");
 
 // attempt select query execution
-$query = "SELECT * FROM reservation";
+$query = "SELECT * FROM reservation WHERE approved=1";
 $result= mysql_query($query, $connect);
 
 $numRows= mysql_num_rows($result);
