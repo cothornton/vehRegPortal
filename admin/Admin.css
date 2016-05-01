@@ -38,3 +38,14 @@ html, body{
 	vertical-align: middle;
 
 }
+
+.navbar-brand>img { 
+    overflow: visible;
+    width:40px;
+    height:45px;
+
+}
+
+.navbar-brand {
+padding-top: 2px;
+}

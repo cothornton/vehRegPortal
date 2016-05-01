@@ -1,0 +1,211 @@
+<form class='form-horizontal' role='form' action='postres.php' method='post'>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_accomodation'>Date of Request</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+              <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_checkin' name="date">
+                  <span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+                </div>
+              </div>
+
+<!-- <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_checkin'>Checkin</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                
+
+            </div> -->
+          </div>
+
+          <!--department request dropdown (dropdown so there is no confusion)-->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Requesting Department</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='dept_title' name="requesting_dept">
+                    <option value="Arts and Science">Arts and Science</option>
+                    <option value="Business and Econ">Business and Econ</option>
+                    <option value="Education">Education</option>
+                    <option value="Nursing">Nursing</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Engingeering">Engineering</option>
+                    <option value="Campus Org (Other)">Campus Org (Other)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+              <!--end-->
+
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Driver's Name</label>
+            <div class='col-md-8'>
+              <!-- <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_title'>
+                    <option>Mr</option>
+                    <option>Ms</option>
+                    <option>Mrs</option>
+                    <option>Miss</option>
+                    <option>Dr</option>
+                  </select>
+                </div>
+              </div> -->
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_first_name' placeholder='Driver Name' name="driver" type='text'>
+                </div>
+              </div>
+              <!-- <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_last_name' placeholder='Last Name' type='text'>
+                </div>
+              </div> -->
+            </div>
+          </div>
+<!--end of drive name-->
+<!--Get the contact information of the driver just in case they are not the same person as the requestor-->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_email'>Driver's Contact Info</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_email' placeholder='E-mail' type='text'>
+                </div>
+              </div>
+              <div class='form-group internal'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_phone' placeholder='Phone: (xxx) - xxx xxxx' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+
+          <!--Passenger Number (in digits)-->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Number of Passengers</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select name="passengers" class='form-control' id='passengers'>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          <!--end-->
+
+          <!--need to properly format for leave and return date-->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_checkin'>Leave Date</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='leaved'>
+                  <span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+                </div>
+              </div>
+              <label class='control-label col-md-2' for='id_checkout'>Return Date</label>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_returnd'>
+                  <span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+
+          <!--time to leave and time to come back-->
+
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_checkin'>Leave Time</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_leavet'>
+                  <span class='input-group-addon'>
+                    <i class="glyphicon glyphicon-time"></i>
+                  </span>
+                </div>
+              </div>
+              <label class='control-label col-md-2' for='id_checkout'>Return Time</label>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_returnt'>
+                  <span class='input-group-addon'>
+                    <i class="glyphicon glyphicon-time"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+
+          <!--destination (hopefully google maps api will auto finish it)-->
+
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_email'>Ultimate Destination</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_dest' placeholder='Enter Address of Destination' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--end-->
+
+          <!--Dropdown for vehicle request-->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_equipment'>Vehicle</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_vehicle'>
+                    <option value"Sedan(s)">Sedan(s)</option>
+                    <option value="Stationwagon(s)">Stationwagon(s)</option>
+                    <option value="Van(s)">Van(s) 7 Passenger</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div> 
+            <!--end of vehicle drop-->
+          <!--short reason why vehicle is needed-->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='business_justification'>Busines Justification</label>
+            <div class='col-md-6'>
+              <textarea name= 'purpose' class='form-control' id='business_justification' placeholder='Business Justification' rows='3'></textarea>
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='col-md-offset-4 col-md-3'>
+              <button class='btn-lg btn-primary' type='submit'>Request Reservation</button>
+            </div>
+            <div class='col-md-3'>
+              <button class='btn-lg btn-danger' style='float:right' type='submit'>Cancel</button>
+            </div>
+          </div>
+        </form>

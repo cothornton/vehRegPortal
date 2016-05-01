@@ -37,7 +37,7 @@
                  <li><a href="index.html">Home</a></li>
                   <li><a href="accountinfo.html">Account Info</a></li>
                   <li><a href="makereservation.html">Make Reservation</a></li> 
-                  <li class="active"><a href="reshistory.html">Reservation Log</a></li> 
+                  <li class="active"><a href="reshistory.php">Reservation Log</a></li> 
                </ul>
 
                   <form class="navbar-form navbar-right" role="search">
@@ -101,21 +101,20 @@
                     $driver=mysql_result($result,$i,"driver");
                     $pass_name=mysql_result($result,$i,"passenger_name");
                     $veh=mysql_result($result,$i,"vehicle");
-                    $mi=mysql_result($result,$i,"miles");
+                    $mi=mysql_result($re0sult,$i,"miles");
                     $purpose=mysql_result($result,$i,"purpose");
-
+                    mysql_close();
                   ?> 
 
-                     <tr>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$confirm"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$dt"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$req_dept"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$building"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$driver"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$pass_name"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$veh"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$mi"; ?></font></td>
-                      <td><font face="Arial, Helvetica, sans-serif"><? echo "$purpose"; ?></font></td>          
+                     <tr> <td><font face="Arial, Helvetica, sans-serif"><?echo "$confirm"; ?></font></td> </tr>
+                      <td><font face="Arial, Helvetica, sans-serif"><?echo "$dt"; ?></font></td></tr>
+                      <td><font face="Arial, Helvetica, sans-serif"><?echo "$req_dept"; ?></font></td></tr>
+                      <td><font face="Arial, Helvetica, sans-serif"><?echo "$building"; ?></font></td></tr>
+                      <td><font face="Arial, Helvetica, sans-serif"><?echo "$driver"; ?></font></td></tr>
+                      <td><font face="Arial, Helvetica, sans-serif"><?echo "$pass_name"; ?></font></td></tr>
+                      <tr><td><font face="Arial, Helvetica, sans-serif"><?echo "$veh"; ?></font></td></tr>
+                      <tr><td><font face="Arial, Helvetica, sans-serif"><?echo "$mi"; ?></font></td></tr>
+                      <tr><td><font face="Arial, Helvetica, sans-serif"><?echo "$purpose"; ?></font></td></tr>          
                     <?
                     $i++; }
                     ?> 
